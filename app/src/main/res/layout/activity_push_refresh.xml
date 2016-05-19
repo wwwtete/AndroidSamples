@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wangw.samples.refreshlayout.PushRefreshActivity">
+
+    <com.wangw.samples.refreshlayout.view.PushLoadLayout
+        android:id="@+id/refreshview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/listview"
+            android:background="#00FF00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.wangw.samples.refreshlayout.view.PushLoadLayout>
+
+</RelativeLayout>

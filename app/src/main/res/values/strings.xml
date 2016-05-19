@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidSamples</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_leak_canary_test_activy">LeakCanaryTestActivy</string>
+</resources>
