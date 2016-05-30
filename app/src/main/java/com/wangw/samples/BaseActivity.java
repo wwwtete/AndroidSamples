@@ -3,6 +3,7 @@ package com.wangw.samples;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.exlogcat.L;
 import com.wangw.samples.comm.SamplesModel;
 
 import butterknife.ButterKnife;
@@ -21,5 +22,6 @@ public abstract class BaseActivity extends AppCompatActivity implements SamplesM
     public void onContentChanged() {
         super.onContentChanged();
         ButterKnife.bind(this);
+        L.d("Activity At ("+getClass().getSimpleName()+".java:0)");
     }
 }

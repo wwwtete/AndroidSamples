@@ -111,6 +111,7 @@ public class PullRefreshLayout extends LinearLayout {
         mFooterViewHeight = mFooterView.getMeasuredHeight();
         LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT,mFooterViewHeight);
         addView(mFooterView, params);
+        mFooterView.setVisibility(GONE);
     }
 
     @Override
