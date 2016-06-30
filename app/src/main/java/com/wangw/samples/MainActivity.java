@@ -9,8 +9,9 @@ import android.view.View;
 import com.wangw.commonadapter.RecyclerViewAdapter;
 import com.wangw.samples.comm.SamplesAdapter;
 import com.wangw.samples.comm.SamplesModel;
-import com.wangw.samples.exoplayer.ExoPlayerSamplesActivity;
-import com.wangw.samples.refreshlayout.RefreshSamplesActivity;
+import com.wangw.samples.exoplayer.HomeExoPlayerActivity;
+import com.wangw.samples.popupwindow.HomePopupWindowActivity;
+import com.wangw.samples.refreshlayout.HomeRefreshActivity;
 import com.wangw.samples.sample_leakcanary.LeakCanaryActivity;
 
 import butterknife.Bind;
@@ -36,8 +37,9 @@ public class MainActivity extends BaseActivity implements RecyclerViewAdapter.On
         initRecyclerView();
 
         addSample(LeakCanaryActivity.class);
-        addSample(RefreshSamplesActivity.class);
-        addSample(ExoPlayerSamplesActivity.class);
+        addSample(HomeRefreshActivity.class);
+        addSample(HomeExoPlayerActivity.class);
+        addSample(HomePopupWindowActivity.class);
 
     }
 

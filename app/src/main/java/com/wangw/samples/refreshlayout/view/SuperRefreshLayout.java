@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.wangw.samples.R;
-import com.wangw.samples.refreshlayout.RefreshSamplesActivity;
+import com.wangw.samples.refreshlayout.HomeRefreshActivity;
 
 /**
  * Created by wangw on 2016/5/12.
@@ -18,7 +18,7 @@ public class SuperRefreshLayout extends LinearLayout {
     private SwipeRefreshLayout mRefreshLayout;
     private View mFooterView;
 
-    private RefreshSamplesActivity mLoadListener;
+    private HomeRefreshActivity mLoadListener;
 
     public SuperRefreshLayout(Context context) {
         super(context);

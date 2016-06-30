@@ -8,7 +8,7 @@ import com.wangw.samples.comm.SampleListView;
 
 import butterknife.Bind;
 
-public class RefreshSamplesActivity extends BaseActivity {
+public class HomeRefreshActivity extends BaseActivity {
 
 
     @Bind(R.id.listview)
@@ -18,7 +18,7 @@ public class RefreshSamplesActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_refresh);
+        setContentView(R.layout.activity_home);
         setTitle("RefreshLayout Samples");
 
         initView();

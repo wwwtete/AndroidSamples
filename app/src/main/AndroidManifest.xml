@@ -25,13 +25,17 @@
             android:label="@string/title_activity_leak_canary_test_activy"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".sample_leakcanary.LeakCanaryActivity"/>
-        <activity android:name=".refreshlayout.RefreshSamplesActivity"/>
+        <activity android:name=".refreshlayout.HomeRefreshActivity"/>
         <activity android:name=".refreshlayout.RefreshLayoutActivity"/>
         <activity android:name=".refreshlayout.PushRefreshActivity"/>
         <activity android:name=".refreshlayout.PullRefreshActivity"/>
-        <activity android:name=".exoplayer.ExoPlayerSamplesActivity">
+        <activity android:name=".exoplayer.HomeExoPlayerActivity">
         </activity>
         <activity android:name=".exoplayer.SimpleExoPlayerActivity">
+        </activity>
+        <activity android:name=".popupwindow.HomePopupWindowActivity">
+        </activity>
+        <activity android:name=".popupwindow.DefaultPopupWindowSample">
         </activity>
     </application>
 

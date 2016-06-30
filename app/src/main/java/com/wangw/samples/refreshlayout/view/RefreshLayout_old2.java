@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 import com.exlogcat.L;
 import com.wangw.samples.R;
-import com.wangw.samples.refreshlayout.RefreshSamplesActivity;
+import com.wangw.samples.refreshlayout.HomeRefreshActivity;
 
 /**
  * Created by wangw on 2016/5/10.
@@ -83,11 +83,11 @@ public class RefreshLayout_old2 extends LinearLayout {
         super.onLayout(changed, l, t, r, b);
     }
 
-    public void setOnLoadListener(RefreshSamplesActivity refreshActivity) {
+    public void setOnLoadListener(HomeRefreshActivity refreshActivity) {
 
     }
 
-    public void setOnRefreshListener(RefreshSamplesActivity refreshActivity) {
+    public void setOnRefreshListener(HomeRefreshActivity refreshActivity) {
 
     }
 

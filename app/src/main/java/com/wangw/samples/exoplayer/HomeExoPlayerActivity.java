@@ -9,7 +9,7 @@ import com.wangw.samples.comm.SampleListView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class ExoPlayerSamplesActivity extends BaseActivity {
+public class HomeExoPlayerActivity extends BaseActivity {
 
     @Bind(R.id.listview)
     SampleListView mListview;

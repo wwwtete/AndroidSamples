@@ -6,7 +6,7 @@
     android:id="@+id/activity_exo_player_samples"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.wangw.samples.exoplayer.ExoPlayerSamplesActivity">
+    tools:context="com.wangw.samples.exoplayer.HomeExoPlayerActivity">
 
     <com.wangw.samples.comm.SampleListView
         android:id="@+id/listview"
