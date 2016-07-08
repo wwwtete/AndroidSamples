@@ -43,6 +43,10 @@
         </activity>
         <activity android:name=".pinnedheaderListview.ExPinnedHeaderListViewActivity">
         </activity>
+        <activity android:name=".materialrangebar.HomeMaterialrangebarActivity">
+        </activity>
+        <activity android:name=".materialrangebar.DefaultMaterialrangebarActivity">
+        </activity>
     </application>
 
 </manifest>
