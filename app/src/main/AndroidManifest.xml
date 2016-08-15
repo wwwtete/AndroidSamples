@@ -47,6 +47,10 @@
         </activity>
         <activity android:name=".materialrangebar.DefaultMaterialrangebarActivity">
         </activity>
+        <activity android:name=".density.ImageDensityActivity">
+        </activity>
+        <activity android:name=".density.HomeDensityActivity">
+        </activity>
     </application>
 
 </manifest>
