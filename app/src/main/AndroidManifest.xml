@@ -51,6 +51,8 @@
         </activity>
         <activity android:name=".density.HomeDensityActivity">
         </activity>
+        <activity android:name=".flowlayout.FlowLayoutActivity">
+        </activity>
     </application>
 
 </manifest>

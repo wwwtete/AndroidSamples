@@ -11,6 +11,7 @@ import com.wangw.samples.comm.SamplesAdapter;
 import com.wangw.samples.comm.SamplesModel;
 import com.wangw.samples.density.HomeDensityActivity;
 import com.wangw.samples.exoplayer.HomeExoPlayerActivity;
+import com.wangw.samples.flowlayout.FlowLayoutActivity;
 import com.wangw.samples.materialrangebar.HomeMaterialrangebarActivity;
 import com.wangw.samples.pinnedheaderListview.HomeHeaderListViewActivity;
 import com.wangw.samples.popupwindow.HomePopupWindowActivity;
@@ -46,6 +47,7 @@ public class MainActivity extends BaseActivity implements RecyclerViewAdapter.On
         addSample(HomeHeaderListViewActivity.class);
         addSample(HomeMaterialrangebarActivity.class);
         addSample(HomeDensityActivity.class);
+        addSample(FlowLayoutActivity.class);
 
     }
 
