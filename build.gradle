@@ -18,6 +18,7 @@ allprojects {
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+ext{
+    compileSdkVersion = COMPILE_SDK_VERSION as int
+    buildToolsVersion = BUILD_TOOLS_VERSION as String
 }
