@@ -55,6 +55,19 @@
         </activity>
         <activity android:name=".layout.WeightSampleActivity">
         </activity>
+        <activity android:name=".material.MaterialSamplesActivity">
+        </activity>
+        <activity android:name=".recyclerview.ItemDecorActivity">
+        </activity>
+        <activity android:name=".recyclerview.RecyclerViewSamples">
+        </activity>
+        <activity android:name=".fresco.FrescoSampleActivity"/>
+        <activity android:name=".fresco.FristSampleActiity"/>
+        <activity
+            android:name=".material.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

@@ -3,8 +3,8 @@ package com.wangw.samples;
 import android.app.Application;
 
 import com.exlogcat.L;
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.squareup.leakcanary.LeakCanary;
-import com.squareup.leakcanary.RefWatcher;
 
 /**
  * Created by wangw on 2016/4/14.
@@ -22,6 +22,7 @@ public class SamplesApplication extends Application {
         super.onCreate();
         mInstance = this;
         initLog();
+        initFresco();
         initLeakCanary();
     }
 
@@ -40,4 +41,9 @@ public class SamplesApplication extends Application {
                 .methodCount(2)
                 .hideThreadInfo();
     }
+
+    private void initFresco(){
+        Fresco.initialize(this);
+    }
+
 }

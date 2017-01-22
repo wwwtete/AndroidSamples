@@ -12,10 +12,13 @@ import com.wangw.samples.comm.SamplesModel;
 import com.wangw.samples.density.HomeDensityActivity;
 import com.wangw.samples.exoplayer.HomeExoPlayerActivity;
 import com.wangw.samples.flowlayout.FlowLayoutActivity;
+import com.wangw.samples.fresco.FrescoSampleActivity;
 import com.wangw.samples.layout.WeightSampleActivity;
+import com.wangw.samples.material.MaterialSamplesActivity;
 import com.wangw.samples.materialrangebar.HomeMaterialrangebarActivity;
 import com.wangw.samples.pinnedheaderListview.HomeHeaderListViewActivity;
 import com.wangw.samples.popupwindow.HomePopupWindowActivity;
+import com.wangw.samples.recyclerview.RecyclerViewSamples;
 import com.wangw.samples.refreshlayout.HomeRefreshActivity;
 import com.wangw.samples.sample_leakcanary.LeakCanaryActivity;
 
@@ -41,6 +44,8 @@ public class MainActivity extends BaseActivity implements RecyclerViewAdapter.On
         ButterKnife.bind(this);
         initRecyclerView();
 
+        addSample(FrescoSampleActivity.class);
+        addSample(MaterialSamplesActivity.class);
         addSample(LeakCanaryActivity.class);
         addSample(HomeRefreshActivity.class);
         addSample(HomeExoPlayerActivity.class);
@@ -50,7 +55,7 @@ public class MainActivity extends BaseActivity implements RecyclerViewAdapter.On
         addSample(HomeDensityActivity.class);
         addSample(FlowLayoutActivity.class);
         addSample(WeightSampleActivity.class);
-
+        addSample(RecyclerViewSamples.class);
     }
 
     private void addSample(Class clz){
