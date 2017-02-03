@@ -63,6 +63,8 @@
         </activity>
         <activity android:name=".fresco.FrescoSampleActivity"/>
         <activity android:name=".fresco.FristSampleActiity"/>
+        <activity android:name=".coordinatorLayout.SamplesActivity"/>
+        <activity android:name=".coordinatorLayout.AppBarSampleActivity"/>
         <activity
             android:name=".material.ScrollingActivity"
             android:label="@string/title_activity_scrolling"

@@ -9,6 +9,7 @@ import android.view.View;
 import com.wangw.commonadapter.RecyclerViewAdapter;
 import com.wangw.samples.comm.SamplesAdapter;
 import com.wangw.samples.comm.SamplesModel;
+import com.wangw.samples.coordinatorLayout.SamplesActivity;
 import com.wangw.samples.density.HomeDensityActivity;
 import com.wangw.samples.exoplayer.HomeExoPlayerActivity;
 import com.wangw.samples.flowlayout.FlowLayoutActivity;
@@ -56,6 +57,7 @@ public class MainActivity extends BaseActivity implements RecyclerViewAdapter.On
         addSample(FlowLayoutActivity.class);
         addSample(WeightSampleActivity.class);
         addSample(RecyclerViewSamples.class);
+        addSample(SamplesActivity.class);
     }
 
     private void addSample(Class clz){
