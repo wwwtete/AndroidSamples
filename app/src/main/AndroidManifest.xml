@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.wangw.samples">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:name=".SamplesApplication"
         android:allowBackup="true"
@@ -61,10 +65,17 @@
         </activity>
         <activity android:name=".recyclerview.RecyclerViewSamples">
         </activity>
+        <activity android:name=".recyclerview.StickyHeaderActivity"/>
         <activity android:name=".fresco.FrescoSampleActivity"/>
         <activity android:name=".fresco.FristSampleActiity"/>
         <activity android:name=".coordinatorLayout.SamplesActivity"/>
         <activity android:name=".coordinatorLayout.AppBarSampleActivity"/>
+        <activity android:name=".media.SampleActivity"/>
+        <activity android:name=".media.AudioSamplesActivity"/>
+        <activity android:name=".media.MediaCodecSampleActivity"/>
+        <activity android:name=".media.VideoSamplesActivity"/>
+        <activity android:name=".media.VideoAndAudioSampleActivity"/>
+        <activity android:name=".comm.FileExplorerActivity"/>
         <activity
             android:name=".material.ScrollingActivity"
             android:label="@string/title_activity_scrolling"

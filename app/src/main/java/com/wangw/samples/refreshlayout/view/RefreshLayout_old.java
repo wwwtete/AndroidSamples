@@ -111,7 +111,7 @@ public class RefreshLayout_old extends SwipeRefreshLayout {
 
     private void addFooterView() {
 //        mViewFooter = new ImageView(getContext());
-//        ((ImageView)mViewFooter).setImageResource(R.drawable.ic_launcher);
+//        ((ImageView)mViewFooter).setImageResource(R.drawable.if_ic_launcher);
 //        ((ImageView)mViewFooter).setAdjustViewBounds(true);
 //        ((ImageView)mViewFooter).setScaleType(ImageView.ScaleType.FIT_XY);
 

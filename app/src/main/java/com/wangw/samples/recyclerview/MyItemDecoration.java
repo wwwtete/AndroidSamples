@@ -64,14 +64,14 @@ class MyItemDecoration extends RecyclerView.ItemDecoration {
         final int recyclerBottom = parent.getHeight() - parent.getPaddingBottom();
         int size = parent.getChildCount();
         //测试1
-//        for (int i=0;i<size;i++){
-//            final View child = parent.getChildAt(i);
-//            final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child.getLayoutParams();
-//            final int top = Math.max(recyclerTop,child.getBottom() + params.bottomMargin);
-//            final int bottom = Math.min(recyclerBottom,top+25);
-//            mDivider.setBounds(left,top,right,bottom);
-//            mDivider.draw(c);
-//        }
+        for (int i=0;i<size;i++){
+            final View child = parent.getChildAt(i);
+            final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child.getLayoutParams();
+            final int top = Math.max(recyclerTop,child.getBottom() + params.bottomMargin);
+            final int bottom = Math.min(recyclerBottom,top+25);
+            mDivider.setBounds(left,top,right,bottom);
+            mDivider.draw(c);
+        }
 
         //测试2
 //        for (int i=0;i<size;i++){
@@ -93,14 +93,14 @@ class MyItemDecoration extends RecyclerView.ItemDecoration {
 //            mDivider.draw(c);
 //        }
         //测试4
-        for (int i=0;i<size-1;i++){
-            final View child = parent.getChildAt(i);
-            final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child.getLayoutParams();
-            final int top = Math.max(recyclerTop,child.getBottom() + params.bottomMargin - 50);
-            final int bottom = Math.min(recyclerBottom,top+100);
-            mDivider.setBounds(left-100,top,right-100,bottom);
-            mDivider.draw(c);
-        }
+//        for (int i=0;i<size-1;i++){
+//            final View child = parent.getChildAt(i);
+//            final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child.getLayoutParams();
+//            final int top = Math.max(recyclerTop,child.getBottom() + params.bottomMargin - 50);
+//            final int bottom = Math.min(recyclerBottom,top+100);
+//            mDivider.setBounds(left-100,top,right-100,bottom);
+//            mDivider.draw(c);
+//        }
     }
 
     /**

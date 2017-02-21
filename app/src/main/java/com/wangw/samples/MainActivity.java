@@ -17,6 +17,7 @@ import com.wangw.samples.fresco.FrescoSampleActivity;
 import com.wangw.samples.layout.WeightSampleActivity;
 import com.wangw.samples.material.MaterialSamplesActivity;
 import com.wangw.samples.materialrangebar.HomeMaterialrangebarActivity;
+import com.wangw.samples.media.SampleActivity;
 import com.wangw.samples.pinnedheaderListview.HomeHeaderListViewActivity;
 import com.wangw.samples.popupwindow.HomePopupWindowActivity;
 import com.wangw.samples.recyclerview.RecyclerViewSamples;
@@ -45,6 +46,7 @@ public class MainActivity extends BaseActivity implements RecyclerViewAdapter.On
         ButterKnife.bind(this);
         initRecyclerView();
 
+        addSample(SampleActivity.class);
         addSample(FrescoSampleActivity.class);
         addSample(MaterialSamplesActivity.class);
         addSample(LeakCanaryActivity.class);
