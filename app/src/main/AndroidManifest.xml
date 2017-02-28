@@ -75,6 +75,7 @@
         <activity android:name=".media.MediaCodecSampleActivity"/>
         <activity android:name=".media.VideoSamplesActivity"/>
         <activity android:name=".media.VideoAndAudioSampleActivity"/>
+        <activity android:name=".media.VideoCacheSampleActivity"/>
         <activity android:name=".comm.FileExplorerActivity"/>
         <activity
             android:name=".material.ScrollingActivity"

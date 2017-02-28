@@ -5,12 +5,14 @@ import android.app.Application;
 import com.exlogcat.L;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.squareup.leakcanary.LeakCanary;
+import com.wangw.videocache.VideoCacheProxyServer;
 
 /**
  * Created by wangw on 2016/4/14.
  */
 public class SamplesApplication extends Application {
 
+    private VideoCacheProxyServer mVideoCacheServer;
     private static SamplesApplication mInstance;
 
     public static SamplesApplication getInstance(){
@@ -44,6 +46,15 @@ public class SamplesApplication extends Application {
 
     private void initFresco(){
         Fresco.initialize(this);
+    }
+
+    public VideoCacheProxyServer getVideoCacheServer(){
+        if (mVideoCacheServer == null) {
+            mVideoCacheServer = new VideoCacheProxyServer.Builder(this)
+                    .setCacheRoot(getCacheDir())
+                    .build();
+        }
+        return mVideoCacheServer;
     }
 
 }

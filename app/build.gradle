@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
 
 android {
     compileSdkVersion COMPILE_SDK_VERSION as int
@@ -19,6 +20,19 @@ android {
     }
     productFlavors {
     }
+
+    greendao {
+        // 数据库schema版本，也可以理解为数据库版本号
+        schemaVersion 1
+        //  设置DaoMaster 、DaoSession、Dao包名
+        daoPackage  'com.wangw.samples.greendao.dao'
+        //  设置DaoMaster 、DaoSession、Dao目录
+        targetGenDir 'src/main/java'
+        //  设置生成单元测试目录
+//        targetGenDirTest
+        //  设置自动生成单元测试用例
+//        generateTests
+    }
 }
 
 dependencies {
@@ -38,18 +52,21 @@ dependencies {
     compile 'com.android.support:percent:24.2.1'
     compile 'com.facebook.fresco:fresco:1.0.0'
     // 在 API < 14 上的机器支持 WebP 时，需要添加
-//    compile 'com.facebook.fresco:animated-base-support:1.0.0'
+    //    compile 'com.facebook.fresco:animated-base-support:1.0.0'
     // 支持 GIF 动图，需要添加
-//    compile 'com.facebook.fresco:animated-gif:1.0.0'
+    //    compile 'com.facebook.fresco:animated-gif:1.0.0'
     // 支持 WebP （静态图+动图），需要添加
-//    compile 'com.facebook.fresco:animated-webp:1.0.0'
-//    compile 'com.facebook.fresco:webpsupport:1.0.0'
+    //    compile 'com.facebook.fresco:animated-webp:1.0.0'
+    //    compile 'com.facebook.fresco:webpsupport:1.0.0'
     // 仅支持 WebP 静态图，需要添加
     compile 'com.facebook.fresco:webpsupport:1.0.0'
-//    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha1'
+    //    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha1'
     testCompile 'junit:junit:4.12'
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
     compile project(':materialrangebar_lib')
+    compile 'org.greenrobot:greendao:3.2.0'
+    compile 'org.greenrobot:greendao-generator:3.2.0'
+    compile project(':videocachelib')
 }

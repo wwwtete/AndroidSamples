@@ -1,1 +1,1 @@
-include ':app', ':commonadapter', ':pinnedheaderlistview_lib', ':materialrangebar_lib'
+include ':app', ':commonadapter', ':pinnedheaderlistview_lib', ':materialrangebar_lib', ':videocachelib'

@@ -20,6 +20,7 @@ public class SampleActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setDefaultView();
         onInitDir();
+        addSampleClass(VideoCacheSampleActivity.class);
         addSampleClass(MediaCodecSampleActivity.class);
         addSampleClass(AudioSamplesActivity.class);
         addSampleClass(VideoSamplesActivity.class);
