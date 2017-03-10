@@ -115,7 +115,7 @@ public class VideoEncoder implements Runnable {
         format.setInteger(MediaFormat.KEY_FRAME_RATE,frameRate);
         format.setInteger(MediaFormat.KEY_I_FRAME_INTERVAL,frameInterval);
         format.setInteger(MediaFormat.KEY_COLOR_FORMAT, debugger.getEncoderColorFormat());
-        mEnc= MediaCodec.createEncoderByType(mime);
+        mEnc= MediaCodec.createByCodecName(debugger.getEncoderName());
         mEnc.configure(format,null,null, MediaCodec.CONFIGURE_FLAG_ENCODE);
     }
 
@@ -215,7 +215,7 @@ public class VideoEncoder implements Runnable {
                 if(yuv==null){
                     yuv=new byte[width*height*3/2];
                 }
-                yuv = mConvertor.convert(data);
+                yuv = mConvertor.convert(data);//data;//
             }
             ByteBuffer buffer=getInputBuffer(index);
             buffer.clear();
@@ -234,6 +234,7 @@ public class VideoEncoder implements Runnable {
 
     private void encordMp4(MediaCodec.BufferInfo info, int outIndex) {
         do {
+            Log.d(TAG, "是否为关键帧:"+((info.flags & MediaCodec.BUFFER_FLAG_KEY_FRAME) != 0)+" | flags ="+info.flags);
             if (outIndex >= 0){
                 ByteBuffer outputBuffer = getOutputBuffer(outIndex);
                 if (mVideoTrack >= 0 && info.size > 0&& info.presentationTimeUs > 0)

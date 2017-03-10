@@ -14,6 +14,7 @@ import com.wangw.samples.density.HomeDensityActivity;
 import com.wangw.samples.exoplayer.HomeExoPlayerActivity;
 import com.wangw.samples.flowlayout.FlowLayoutActivity;
 import com.wangw.samples.fresco.FrescoSampleActivity;
+import com.wangw.samples.jni.JNISamplesActivity;
 import com.wangw.samples.layout.WeightSampleActivity;
 import com.wangw.samples.material.MaterialSamplesActivity;
 import com.wangw.samples.materialrangebar.HomeMaterialrangebarActivity;
@@ -47,6 +48,7 @@ public class MainActivity extends BaseActivity implements RecyclerViewAdapter.On
         initRecyclerView();
 
         addSample(SampleActivity.class);
+        addSample(JNISamplesActivity.class);
         addSample(FrescoSampleActivity.class);
         addSample(MaterialSamplesActivity.class);
         addSample(LeakCanaryActivity.class);

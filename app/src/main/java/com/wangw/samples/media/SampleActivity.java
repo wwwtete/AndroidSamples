@@ -13,7 +13,7 @@ import java.io.File;
 
 public class SampleActivity extends BaseActivity {
 
-    public final static String ROOT_DIR = "/sdcard/mediademo";
+    public final static String ROOT_DIR = "/sdcard/ABC";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

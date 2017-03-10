@@ -4,6 +4,8 @@ apply plugin: 'org.greenrobot.greendao'
 android {
     compileSdkVersion COMPILE_SDK_VERSION as int
     buildToolsVersion BUILD_TOOLS_VERSION as String
+
+
     defaultConfig {
         applicationId "com.wangw.samples"
         minSdkVersion MIN_SDK_VERSION as int
@@ -12,6 +14,7 @@ android {
         versionName APP_VERSION_NAME as String
         resConfigs RES_CONFIGS as String
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -25,13 +28,20 @@ android {
         // 数据库schema版本，也可以理解为数据库版本号
         schemaVersion 1
         //  设置DaoMaster 、DaoSession、Dao包名
-        daoPackage  'com.wangw.samples.greendao.dao'
+        daoPackage 'com.wangw.samples.greendao.dao'
         //  设置DaoMaster 、DaoSession、Dao目录
         targetGenDir 'src/main/java'
         //  设置生成单元测试目录
 //        targetGenDirTest
         //  设置自动生成单元测试用例
 //        generateTests
+    }
+
+    //使用CMark的方式编译so
+    externalNativeBuild {
+        cmake {
+            path 'CMakeLists.txt'
+        }
     }
 }
 
