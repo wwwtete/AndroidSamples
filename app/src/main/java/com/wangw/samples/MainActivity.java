@@ -19,6 +19,7 @@ import com.wangw.samples.layout.WeightSampleActivity;
 import com.wangw.samples.material.MaterialSamplesActivity;
 import com.wangw.samples.materialrangebar.HomeMaterialrangebarActivity;
 import com.wangw.samples.media.SampleActivity;
+import com.wangw.samples.opengl.OpenGlSampleActivity;
 import com.wangw.samples.pinnedheaderListview.HomeHeaderListViewActivity;
 import com.wangw.samples.popupwindow.HomePopupWindowActivity;
 import com.wangw.samples.recyclerview.RecyclerViewSamples;
@@ -51,6 +52,7 @@ public class MainActivity extends BaseActivity implements RecyclerViewAdapter.On
         addSample(JNISamplesActivity.class);
         addSample(FrescoSampleActivity.class);
         addSample(MaterialSamplesActivity.class);
+        addSample(OpenGlSampleActivity.class);
         addSample(LeakCanaryActivity.class);
         addSample(HomeRefreshActivity.class);
         addSample(HomeExoPlayerActivity.class);

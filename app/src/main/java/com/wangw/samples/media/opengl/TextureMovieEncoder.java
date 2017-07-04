@@ -25,7 +25,6 @@ import android.os.Message;
 import android.util.Log;
 
 
-import com.wangw.samples.media.OpenGLVideoRecodActivity;
 
 import java.io.File;
 import java.io.IOException;
@@ -57,7 +56,7 @@ import java.lang.ref.WeakReference;
  * TODO: tweak the API (esp. textureId) so it's less awkward for simple use cases.
  */
 public class TextureMovieEncoder implements Runnable {
-    private static final String TAG = OpenGLVideoRecodActivity.TAG;
+    private static final String TAG = "TextureMovieEncoder";
     private static final boolean VERBOSE = false;
 
     private static final int MSG_START_RECORDING = 0;

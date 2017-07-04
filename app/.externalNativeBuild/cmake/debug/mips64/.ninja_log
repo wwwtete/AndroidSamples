@@ -63,3 +63,7 @@
 319	373	0	../../../../build/intermediates/cmake/debug/obj/mips64/libnative-lib.so	75f80fa8e0ece6e
 28	745	0	CMakeFiles/native-lib.dir/src/main/cpp/NativeLib.cpp.o	ea20480d34fee9b
 745	912	0	../../../../build/intermediates/cmake/debug/obj/mips64/libnative-lib.so	75f80fa8e0ece6e
+3	63	0	build.ninja	df7e61a01accf26f
+1	229	0	CMakeFiles/native-lib.dir/src/main/cpp/NativeLib2.cpp.o	5aa89be269e9b2ec
+1	282	0	CMakeFiles/native-lib.dir/src/main/cpp/NativeLib.cpp.o	763c711a76ab7a3e
+283	340	0	../../../../build/intermediates/cmake/debug/obj/mips64/libnative-lib.so	7c55c453c236305c

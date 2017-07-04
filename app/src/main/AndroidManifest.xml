@@ -78,6 +78,8 @@
         <activity android:name=".media.VideoCacheSampleActivity"/>
         <activity android:name=".comm.FileExplorerActivity"/>
         <activity android:name=".jni.JNISamplesActivity"/>
+        <activity android:name=".opengl.OpenGlSampleActivity"/>
+        <activity android:name=".opengl.FristSampleActivity"/>
         <activity
             android:name=".material.ScrollingActivity"
             android:label="@string/title_activity_scrolling"

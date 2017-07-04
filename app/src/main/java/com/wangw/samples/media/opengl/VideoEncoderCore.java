@@ -23,8 +23,6 @@ import android.media.MediaMuxer;
 import android.util.Log;
 import android.view.Surface;
 
-import com.wangw.samples.media.OpenGLVideoRecodActivity;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -40,7 +38,7 @@ import java.nio.ByteBuffer;
  * on one thread, and drain the output on a different thread.
  */
 public class VideoEncoderCore {
-    private static final String TAG = OpenGLVideoRecodActivity.TAG;
+    private static final String TAG = "VideoEncoderCore";
     private static final boolean VERBOSE = false;
 
     // TODO: these ought to be configurable as well

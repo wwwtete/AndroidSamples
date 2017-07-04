@@ -18,7 +18,7 @@
 ANDROID_ABI:UNINITIALIZED=x86
 
 //No help, variable specified on the command line.
-ANDROID_NATIVE_API_LEVEL:UNINITIALIZED=18
+ANDROID_NATIVE_API_LEVEL:UNINITIALIZED=21
 
 //No help, variable specified on the command line.
 ANDROID_NDK:UNINITIALIZED=/Users/wangw/Library/Android/sdk/ndk-bundle
@@ -184,10 +184,10 @@ Project_BINARY_DIR:STATIC=/Users/wangw/Documents/AndroidSamples/app/.externalNat
 Project_SOURCE_DIR:STATIC=/Users/wangw/Documents/AndroidSamples/app
 
 //Path to a library.
-log-lib:FILEPATH=/Users/wangw/Library/Android/sdk/ndk-bundle/platforms/android-18/arch-x86/usr/lib/liblog.so
+log-lib:FILEPATH=/Users/wangw/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/liblog.so
 
 //Dependencies for the target
-native-lib_LIB_DEPENDS:STATIC=general;/Users/wangw/Library/Android/sdk/ndk-bundle/platforms/android-18/arch-x86/usr/lib/liblog.so;
+native-lib_LIB_DEPENDS:STATIC=general;/Users/wangw/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/liblog.so;
 
 
 ########################

@@ -64,5 +64,5 @@ endif()
 
 
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;dl;c;dl")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/Users/wangw/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x;/Users/wangw/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/arm-linux-androideabi/lib;/Users/wangw/Library/Android/sdk/ndk-bundle/platforms/android-18/arch-arm/usr/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/Users/wangw/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x;/Users/wangw/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/arm-linux-androideabi/lib;/Users/wangw/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
